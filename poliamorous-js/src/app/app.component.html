@@ -1,22 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <img 
-    src="https://upload.wikimedia.org/wikipedia/en/e/e3/DemocraticLogo.png" 
-    width="50" 
-    height="50"
-  />
-  <img 
-    src="/home/matt/poliamorous/poliamorous-js/src/app/DemocraticLogo.png" 
-    width="50" 
-    height="50"
-  />
-  <h1>
-    {{title}}
-  </h1>
-  <img 
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Republicanlogo.svg/600px-Republicanlogo.svg.png" 
-    width="50" 
-    height="50"
-  />
+<div class="wrapper">
+  <div class="header">
+    <img 
+      src="https://github.com/MthwRobinson/poliamorous/blob/master/poliamorous-js/src/assets/democrat.png?raw=true" 
+      width="32" 
+      height="32"
+    />
+    <h1>
+      {{title}}
+    </h1>
+    <img 
+      src="https://github.com/MthwRobinson/poliamorous/blob/master/poliamorous-js/src/assets/republican.png?raw=true" 
+      width="32" 
+      height="32"
+    />
+  </div>
+  <div class="question">
+    <h2>Question 1</h2>
+    <p>
+      Which political party do you affiliate with?
+    </p>
+    <form>
+      <li>
+        <div class="radio-toolbar">
+          <input type="radio" id = "radio1" checked> 
+          <label for = "radio1">Democrat</label>
+          <input type="radio" id = "radio2"> 
+          <label for = "radio2">Republican</label>
+        </div>
+      </li>
+    </form>
+  </div>
+  <div class="nav-buttons">
+    <button>Back</button>
+    <button>Submit</button>
+    <button>Next</button>
+  </div>
 </div>
 
