@@ -1,15 +1,15 @@
 <div class="question">
-  <h2>Question 1</h2>
+  <h2>Question {{question.id}}</h2>
   <p>
-    Nah, who would you rather go on creep ops with? 
+    {{question.text}}
   </p>
   <form>
     <li>
       <div class="radio-toolbar">
         <input type="radio" id = "radio1" checked> 
-        <label for = "radio1">AS9</label>
+        <label for = "radio1">{{question.options[0]}}</label>
         <input type="radio" id = "radio2"> 
-        <label for = "radio2">MSG</label>
+        <label for = "radio2">{{question.options[1]}}</label>
       </div>
     </li>
   </form>

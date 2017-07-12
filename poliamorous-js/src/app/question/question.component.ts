@@ -11,12 +11,17 @@ import 'rxjs/add/operator/switchMap';
   styleUrls: ['./question.component.css']
 })
 
-export class QuestionComponent {
+export class QuestionComponent implements OnInit {
   constructor(
     private questionService: QuestionService
   ){}
 
   // The input decorator declares an input property
-  // @Input() question: question;
+  @Input() question: Question;
+  
+  ngOnInit(): void{
+    this.questionService.getQuestions()
+    .then(questions => this.question = questions[0]);
 
+  }
 }

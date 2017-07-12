@@ -3,26 +3,34 @@ import { Question } from './question';
 export const QUESTIONS: Question[] = [
   {
     id: 1,
-    question: 'Who did you vote for in the 2017 Presidential election?',
-    option1: 'Clinton',
-    option2: 'Trump'
+    text: 'Who did you vote for in the 2017 Presidential election?',
+    options: [
+      'Clinton',
+      'Trump'
+    ]
   },
   {
     id: 2,
-    question: 'What party do you identify with?',
-    option1: 'Democratic',
-    option2: 'Republican'
+    text: 'What party do you identify with?',
+    options: [
+      'Democratic',
+      'Republican'
+    ]
   },
   {
     id: 3,
-    question: 'In general, do you believe a lower tax burden leads to greater economic growth?',
-    option1: 'Yes',
-    option2: 'No'
+    text: 'In general, do you believe a lower tax burden leads to greater economic growth?',
+    options: [
+      'Yes',
+      'No'
+    ]
   },
   {
     id: 4,
-    question: 'Do you believe that health care is a universal right?',
-    option1: 'Yes',
-    option2: 'No'
+    text: 'Do you believe that health care is a universal right?',
+    options: [
+      'Yes',
+      'No'
+    ]
   }
 ];

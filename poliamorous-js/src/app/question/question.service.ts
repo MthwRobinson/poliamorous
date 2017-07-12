@@ -7,10 +7,11 @@ import { QUESTIONS } from './mock-questions';
 //  emit meta data about the service
 @Injectable()
 export class QuestionService {
-  getQuestions(): Promise<Question[]>{
+  getQuestions(): Promise<Question[]> {
     // Returns the mock question in the mock-quesions.ts file
     // The promise will prevent the UI from loading until
     //  data has been returned 
+    
     return Promise.resolve(QUESTIONS);
   }
 
