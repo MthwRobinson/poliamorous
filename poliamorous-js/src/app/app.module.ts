@@ -1,18 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
+// Angular Components
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
+// Poliamorous Components
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 
+// Poliamorous Services
+import { QuestionService } from './question/question.service';
+
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
   declarations: [
     AppComponent,
     QuestionComponent
   ],
-  imports: [
-    BrowserModule
+  providers: [
+    QuestionService
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

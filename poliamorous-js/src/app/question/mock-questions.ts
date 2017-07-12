@@ -9,7 +9,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 2,
-    question: 'What party do you identify with?'
+    question: 'What party do you identify with?',
     option1: 'Democratic',
     option2: 'Republican'
   },
@@ -17,12 +17,12 @@ export const QUESTIONS: Question[] = [
     id: 3,
     question: 'In general, do you believe a lower tax burden leads to greater economic growth?',
     option1: 'Yes',
-    option2: 'No
+    option2: 'No'
   },
   {
     id: 4,
     question: 'Do you believe that health care is a universal right?',
     option1: 'Yes',
-    option2: 'No
+    option2: 'No'
   }
 ];
