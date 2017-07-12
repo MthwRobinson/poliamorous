@@ -11,7 +11,6 @@ export class QuestionService {
     // Returns the mock question in the mock-quesions.ts file
     // The promise will prevent the UI from loading until
     //  data has been returned 
-    
     return Promise.resolve(QUESTIONS);
   }
 
@@ -20,6 +19,10 @@ export class QuestionService {
     return this.getQuestions()
       .then(questions => questions
       .find(question => question.id === id));
+  }
+
+  countQuestions(): number {
+    return QUESTIONS.length;
   }
 
 }

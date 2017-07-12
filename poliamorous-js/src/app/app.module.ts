@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 
-// Poliamorous Services
+// Poliamorous Services and Routing
+import { AppRoutingModule } from './app-routing.module';
 import { QuestionService } from './question/question.service';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,

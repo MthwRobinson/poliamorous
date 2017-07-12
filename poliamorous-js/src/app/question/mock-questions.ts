@@ -3,7 +3,7 @@ import { Question } from './question';
 export const QUESTIONS: Question[] = [
   {
     id: 1,
-    text: 'Who did you vote for in the 2017 Presidential election?',
+    text: 'Who did you vote for in the 2016 Presidential election?',
     options: [
       'Clinton',
       'Trump'
