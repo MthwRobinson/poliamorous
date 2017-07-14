@@ -5,6 +5,11 @@ import { QuestionComponent } from './question/question.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/question/1',
+    pathMatch: 'full'
+  },
+  {
     path: 'question/:id',
     component: QuestionComponent
   }

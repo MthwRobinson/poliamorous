@@ -1,5 +1,9 @@
+html, body {
+  height: 100%
+}
+
 .question div{
-  height: 300px;
+  height: 100%;
 }
 
 .question h2 {
@@ -7,10 +11,13 @@
 }
 
 .question p {
+  height: 100%;
   text-align: left;
+
 }
 
 .question form{
+  height: 100%;
   text-align: left;
 }
 
@@ -33,6 +40,12 @@
 
 .radio-toolbar input[type="radio"]:checked+label {
   background-color: #bbb;
+}
+
+.nav-buttons {
+  bottom: 0;
+  position: fixed;
+  height: 100px;
 }
 
 .nav-buttons button {

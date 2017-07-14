@@ -7,7 +7,8 @@ export const QUESTIONS: Question[] = [
     options: [
       'Clinton',
       'Trump'
-    ]
+    ],
+    choice: null
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ export const QUESTIONS: Question[] = [
     options: [
       'Democratic',
       'Republican'
-    ]
+    ],
+    choice: null
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ export const QUESTIONS: Question[] = [
     options: [
       'Yes',
       'No'
-    ]
+    ],
+    choice: null
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ export const QUESTIONS: Question[] = [
     options: [
       'Yes',
       'No'
-    ]
+    ],
+    choice: null
   }
 ];

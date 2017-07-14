@@ -6,9 +6,11 @@
   <form>
     <li>
       <div class="radio-toolbar">
-        <input type="radio" id = "radio1" checked> 
+        <input type = "radio" [(ngModel)]="question.choice"
+          name="choice" id = "radio1"> 
         <label for = "radio1">{{question.options[0]}}</label>
-        <input type="radio" id = "radio2"> 
+        <input type = "radio" [(ngModel)]="question.choice" 
+          name="choice" id = "radio2" > 
         <label for = "radio2">{{question.options[1]}}</label>
       </div>
     </li>

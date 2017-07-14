@@ -24,6 +24,7 @@ export class QuestionComponent implements OnInit {
 
   // Attributes
   numQuestions = this.questionService.countQuestions();
+  buttonChoice = "first";
 
   // The input decorator declares an input property
   @Input() question: Question;
@@ -34,7 +35,7 @@ export class QuestionComponent implements OnInit {
     this.route.paramMap
       .switchMap((params: ParamMap) =>
         this.questionService.getQuestion(+params.get('id')))
-          .subscribe(question => this.question = question);
+        .subscribe(question => this.question = question);
   }
 
   previousQuestion(): void {
@@ -54,4 +55,7 @@ export class QuestionComponent implements OnInit {
     }
     this.router.navigate(['/question', nextId]);
   }
+
+
+  
 }
