@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var Ng2SliderComponent: any;
 
 @Component({
   selector: 'priorities',
