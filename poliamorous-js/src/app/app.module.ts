@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 // Poliamorous Components
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
+import { PrioritiesComponent } from './priorities/priorities.component';
 
 // Poliamorous Services and Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +20,8 @@ import { QuestionService } from './question/question.service';
   ],
   declarations: [
     AppComponent,
-    QuestionComponent
+    QuestionComponent,
+    PrioritiesComponent
   ],
   providers: [
     QuestionService

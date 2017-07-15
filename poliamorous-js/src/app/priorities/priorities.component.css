@@ -1,0 +1,23 @@
+.wrapper{
+  max-width: 318px;
+  max-height: 800px;
+}
+
+div{
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-align: center;
+  max-width: 318px;
+  max-height: 800px;
+}
+
+div h1 {
+  font-size: 250%;
+  color: #0000ff;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+div img{
+  display: inline-block;
+}
+
