@@ -11,6 +11,7 @@ import { PrioritiesComponent } from './priorities/priorities.component';
 // Poliamorous Services and Routing
 import { AppRoutingModule } from './app-routing.module';
 import { QuestionService } from './question/question.service';
+import { PriorityService } from './priorities/priorities.service';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { QuestionService } from './question/question.service';
     PrioritiesComponent
   ],
   providers: [
-    QuestionService
+    QuestionService,
+    PriorityService
   ],
   bootstrap: [AppComponent]
 })
