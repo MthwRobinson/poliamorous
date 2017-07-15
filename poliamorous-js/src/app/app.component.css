@@ -21,3 +21,20 @@ div img{
   display: inline-block;
 }
 
+.nav-buttons {
+  top: 0;
+  position: fixed;
+  height: 70px;
+}
+
+.nav-buttons button {
+  width: 70px;
+  height: 40px;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
