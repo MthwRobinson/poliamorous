@@ -1,10 +1,34 @@
-import { Component } from '@angular/core';
-declare var Ng2SliderComponent: any;
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+
+import { PriorityService } from './priorities.service';
+
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'priorities',
   templateUrl: './priorities.component.html',
   styleUrls: ['./priorities.component.css']
 })
-export class PrioritiesComponent {
+export class PrioritiesComponent implements OnInit {
+  //Constructor
+  constructor(
+    private priorityService: PriorityService,
+    private route: ActivatedRoute,
+    private router: Router,
+  ){}
+
+  // Attributes
+  @Input() priorities: string[];
+
+  //Methods
+  ngOnInit(): void {
+    this.route.paramMap
+      .switchMap((params: ParamMap) =>
+        this.priorityService.getPriorities())
+    .subscribe(priorities => this.priorities = priorities);
+    
+  }
+  
+
 }
