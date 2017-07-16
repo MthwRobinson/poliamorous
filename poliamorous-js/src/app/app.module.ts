@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 import { PrioritiesComponent } from './priorities/priorities.component';
+import { ProfileComponent } from './profile/profile.component';
 
 // Poliamorous Services and Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +23,8 @@ import { PriorityService } from './priorities/priorities.service';
   declarations: [
     AppComponent,
     QuestionComponent,
-    PrioritiesComponent
+    PrioritiesComponent,
+    ProfileComponent
   ],
   providers: [
     QuestionService,
