@@ -24,7 +24,7 @@ export class SwipeComponent {
   ngOnInit(): void {
     this.route.paramMap
       .switchMap((params: ParamMap) =>
-        this.swipeService.getSwipe())
+        this.swipeService.getMatch(2))
     .subscribe(user => this.user = user);
   }
 

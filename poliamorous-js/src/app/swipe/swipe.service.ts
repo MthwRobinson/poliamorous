@@ -1,11 +1,17 @@
 import { Injectable } from '@angular/core';
 
 import { User } from '../user/user';
-import { USER } from './mock-users';
+import { MATCHES } from './mock-matches';
 
 @Injectable()
 export class SwipeService {
-  getSwipe(): Promise<User> {
-    return Promise.resolve(USER);
+  getMatches(): Promise<User[]> {
+    return Promise.resolve(MATCHES);
+  }
+
+  getMatch(id: number): Promise<User>{
+    return this.getMatches()
+      .then(matches => matches
+        .find(match => match.id === id));
   }
 }
