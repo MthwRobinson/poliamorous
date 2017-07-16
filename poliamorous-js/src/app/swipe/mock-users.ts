@@ -17,7 +17,7 @@ export const USERS: User[] = [
     profile: 'I can see Russia from my house!',
     school: 'University of Idaho',
     party: 'Republican',
-    job: 'Electin Ruiner',
+    job: 'Election Ruiner',
     photoUrl: 'https://github.com/MthwRobinson/poliamorous/blob/master/poliamorous-js/src/assets/palin.jpg'
   }
 ]
