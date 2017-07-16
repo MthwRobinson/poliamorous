@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { QuestionComponent } from './question/question.component';
 import { PrioritiesComponent } from './priorities/priorities.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SwipeComponent } from './swipe/swipe.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'swipe',
+    component: SwipeComponent
   }
 ]
 
