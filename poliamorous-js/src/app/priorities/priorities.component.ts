@@ -30,4 +30,9 @@ export class PrioritiesComponent implements OnInit {
     .subscribe(priorities => this.priorities = priorities);  
   }
 
+  saveSettings(): void{
+    // Stand in for now ... will post updates to database
+    //  once we have that built
+  }
+
 }
