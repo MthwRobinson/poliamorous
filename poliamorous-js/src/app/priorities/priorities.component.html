@@ -3,7 +3,8 @@
     <h3>{{priority.text}}</h3>
     <input type="range" 
            min="0" 
-           max="100" 
+           max="100"
+           [(ngModel)]="priority.value"
            [value]="priority.value"
            step="1"/>
 </div>
