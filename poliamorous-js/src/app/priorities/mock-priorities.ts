@@ -18,16 +18,11 @@ export const PRIORITIES: Priority[] = [
   },
   {
     id: 4,
-    text: 'Foreign Policy',
-    value: 22
-  },
-  {
-    id: 5,
     text: 'Lizard People',
     value: 54
   },
   {
-    id: 6,
+    id: 5,
     text: 'Taco Eating Contests',
     value: 100
   }
