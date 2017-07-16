@@ -12,5 +12,4 @@ import 'rxjs/add/operator/switchMap';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-
 }

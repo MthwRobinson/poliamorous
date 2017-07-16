@@ -1,18 +1,27 @@
+img {
+  display: block;
+  max-height: 220px;
+  max-width: 220px;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
 
 .nav-buttons {
-  top: 0;
+  bottom: 0;
   position: fixed;
-  height: 70px;
+  height: 100px;
+  margin-left: 105px;
 }
 
 .nav-buttons button {
-  width: 70px;
-  height: 40px;
-  background-color: #ddd;
+  width: 100px;
+  background-color: #ccc; 
   border: none;
   color: black;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
 }
