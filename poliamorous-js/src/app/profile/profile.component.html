@@ -4,6 +4,28 @@
   <img 
     src="https://github.com/MthwRobinson/poliamorous/blob/master/poliamorous-js/src/assets/cheney.jpeg?raw=true" 
   />
+
+  <form class="profile-input">
+    <div class="profile-single">
+      <label id="school" for="school"><b>School:</b></label>
+      <input id="school-field" type="text" name="school" [(ngModel)]="user.school"/>
+     
+      <br/>
+      <label for="party"><b>Party:</b></label>
+      <input type="text" name="party" [(ngModel)]="user.party"/>
+      
+      <br/>
+      <label for="job"><b>Job:</b></label>
+      <input type="text" name="job" [(ngModel)]="user.job"/>
+
+      <br/>
+      <label for="summary"><b>Profile:</b></label>
+      <br/>
+      <textarea type="text" name="summary" [(ngModel)]="user.profile">
+      </textarea>
+    </div>
+  </form>
+
 </div>
 <div class="nav-buttons">
   <button>Save</button>
