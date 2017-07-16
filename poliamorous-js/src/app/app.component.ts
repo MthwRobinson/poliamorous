@@ -18,8 +18,9 @@ export class AppComponent {
     if(page=='questions'){
       this.router.navigate(['/question',1])
     }
-    else if(page=='priorities'){
-      this.router.navigate(['/priorities'])
+    else{
+      var routeName = '/' + page;
+      this.router.navigate([routeName])
     }
   }
 

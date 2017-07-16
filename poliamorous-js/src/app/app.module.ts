@@ -13,6 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QuestionService } from './question/question.service';
 import { PriorityService } from './priorities/priorities.service';
+import { ProfileService } from './profile/profile.service';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { PriorityService } from './priorities/priorities.service';
   ],
   providers: [
     QuestionService,
-    PriorityService
+    PriorityService,
+    ProfileService
   ],
   bootstrap: [AppComponent]
 })
