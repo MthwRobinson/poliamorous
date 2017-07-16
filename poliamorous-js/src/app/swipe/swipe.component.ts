@@ -20,12 +20,23 @@ export class SwipeComponent {
   ){}
 
   @Input() user: User;
+  matchSelection: number = 1;
 
   ngOnInit(): void {
-    this.route.paramMap
-      .switchMap((params: ParamMap) =>
-        this.swipeService.getMatch(2))
-    .subscribe(user => this.user = user);
+    this.getMatch(this.matchSelection);
   }
 
+  getMatch(id: number): void {
+    this.route.paramMap
+      .switchMap((params: ParamMap) =>
+        this.swipeService.getMatch(id))
+        .subscribe(user => this.user = user);
+  }
+
+  getNext(): void {
+    // Will also need to post results to database
+    //  once it's up and running
+    this.matchSelection += 1;
+    this.getMatch(this.matchSelection);
+  }
 }
