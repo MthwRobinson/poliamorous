@@ -1,5 +1,12 @@
-<div>
-
-<input type="range" min="0" max="100" value="50" step="1"/>
-
+<div class="priorities" *ngFor="let priority of priorities">
+    <h3>{{priority.text}}</h3>
+    <input type="range" 
+           min="0" 
+           max="100" 
+           [value]="priority.value"
+           step="1"/>
 </div>
+<div class="nav-buttons">
+    <button>Save</button>
+</div>
+

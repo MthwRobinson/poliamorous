@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
+import { Priority } from './priority';
 import { PriorityService } from './priorities.service';
 
 import 'rxjs/add/operator/switchMap';
@@ -19,16 +20,14 @@ export class PrioritiesComponent implements OnInit {
   ){}
 
   // Attributes
-  @Input() priorities: string[];
+  @Input() priorities: Priority[];
 
   //Methods
   ngOnInit(): void {
     this.route.paramMap
       .switchMap((params: ParamMap) =>
         this.priorityService.getPriorities())
-    .subscribe(priorities => this.priorities = priorities);
-    
+    .subscribe(priorities => this.priorities = priorities);  
   }
-  
 
 }
